@@ -17,7 +17,7 @@ This project has been deployed to GitHub Pages. To get this project up and runni
 * A Start Quiz button 
     * This starts a timer for the user
     * Each question averages 15 seconds each for a total time of 75 seconds. 
-    * If questions are answered incorrectly, 8 seconds are deducted off remaining time
+    * If questions are answered incorrectly, 10 seconds are deducted off remaining time
     * Answers are recording using an event listener, "click" and tracks correct answers
     * Final score which is calculated using time remaining
     * Input area to record initials
@@ -53,7 +53,7 @@ This project has been deployed to GitHub Pages. To get this project up and runni
 
 ## Acknowledgments
 
-* Work along with Tutor and TA Andrew to bring everything in order to work.
+* Work along with Tutor Michelle and TA Andrew to bring everything in order to work.
 
 ![](./assets/images/StartQuiz.png)
 ![](./assets/images/Wrong%20Answer.png)
