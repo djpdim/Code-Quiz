@@ -87,6 +87,14 @@
     width: 5%;
 }
 
+.tryagainbtn {
+    background-color: purple;
+    position: relative;
+    top: 350px;
+    left: 690px;
+    color: white;
+    font-size: x-large;
+}
 
 /* new css */
 

@@ -57,6 +57,7 @@ This project has been deployed to GitHub Pages. To get this project up and runni
 
 ![](./assets/images/StartQuiz.png)
 ![](./assets/images/Questions.png)
+![](./assets/images/Tryagain.png)
 ![](./assets/images/Highscores.png)
 
 
