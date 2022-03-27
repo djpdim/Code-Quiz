@@ -59,7 +59,13 @@
     position: relative;
     top: 350px;
     font-size: xx-large;
-    background: purple;
+    background-color: purple;
+    padding: 10px;
+    font-size: 20px;
+    color: white;
+    width: auto;
+    text-align: center;
+    text-decoration: none;
 }
 
 #feedback {
@@ -93,10 +99,6 @@
     margin: 20px;
 }
 
-#currentTime {
-    float: right;
-}
-
 #goBack {
     background-color: purple;
     position: relative;
@@ -110,7 +112,14 @@
     text-decoration: none;
 }
 
-
+li {
+    background-color: purple;
+    margin-top: 10px;
+    padding: 5px 15px;
+    width: 80%;
+    font-size: 18px;
+    color: white;
+}
 
 #clear {
     background-color: purple;
@@ -151,15 +160,6 @@ input {
 
 h1 {
     text-align: center;
-}
-
-li {
-    background-color: purple;
-    margin-top: 10px;
-    padding: 5px 15px;
-    width: 80%;
-    font-size: 18px;
-    color: white;
 }
 
 #createDiv {
