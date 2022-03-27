@@ -40,6 +40,13 @@
     left: 0px;
     margin: 15px;
     position: relative;
+    font-size: x-large;
+    top:20px;
+}
+
+#quizscreen{
+    position: relative;
+    top:40px;
 }
 
 .choices {
@@ -47,6 +54,7 @@
     justify-content: space-evenly;
     position: relative;
     max-width: 100%;
+    top:65px;
 }
 
 #h1 {

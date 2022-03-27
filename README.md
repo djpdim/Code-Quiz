@@ -56,7 +56,7 @@ This project has been deployed to GitHub Pages. To get this project up and runni
 * Work along with Tutor Michelle and TA Andrew to bring everything in order to work.
 
 ![](./assets/images/StartQuiz.png)
-![](./assets/images/Wrong%20Answer.png)
+![](./assets/images/Questions.png)
 ![](./assets/images/Highscores.png)
 
 
