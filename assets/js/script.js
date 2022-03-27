@@ -27,7 +27,7 @@ var questionslist=[
  ]
 
 var timerEl=document.getElementById("timelapse");
-var currentTime= questionslist.length * 12;
+var currentTime= questionslist.length * 15;
 var time;
 var startbtn=document.getElementById("startbtn");
 var questionsDiv=document.getElementById("questionsDiv");
