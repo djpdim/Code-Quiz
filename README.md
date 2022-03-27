@@ -14,20 +14,23 @@ This project has been deployed to GitHub Pages. To get this project up and runni
 * This project utilizes the use of appending HTML pages 
 
 ### This project has the following features: 
-* A Start Quiz button 
-    * This starts a timer for the user
+* A Start Quiz button: 
+    * This starts a timer for the user.
     * Each question averages 15 seconds each for a total time of 75 seconds. 
-    * If questions are answered incorrectly, 10 seconds are deducted off remaining time
-    * Answers are recording using an event listener, "click" and tracks correct answers
-    * Final score which is calculated using time remaining
-    * Input area to record initials
-    * A Submit button
-    * Submit buttom saves initials and score to local storage
+    * If questions are answered incorrectly, 10 seconds are deducted off remaining time.
+    * Answers are recording using an event listener, "click" and tracks correct answers.
+    * Final score which is calculated using time remaining.
+    * Input area to record initials.
+    * A Submit button.
+    * Submit buttom saves initials and score to local storage.
 
-* A Highscores HTML
-    * This a list summary of intials and final scores
-    * Clear button resets the page and local storage
-    * Go back button travels to the start of the quiz
+* A Highscores HTML:
+    * This a list summary of intials and final scores.
+    * Clear button resets the page and local storage.
+    * Go back button travels to the start of the quiz.
+
+* A Try Again button:
+    * This will show when the time is up so user will reload the Quiz and start again from the beggining.
 
 ### Psuedo code:  
 * When countdown starts, start quiz
