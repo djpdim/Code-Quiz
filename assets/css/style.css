@@ -22,7 +22,7 @@
     
 }
 
-#tryagainbtn {
+.hide {
     display: none;
 }
 
@@ -54,10 +54,11 @@
     left:350px;
 }
 
+
 #startbtn {
-    left: 555px;
+    left: 180px;
     position: relative;
-    top: 350px;
+    top: 0px;
     font-size: xx-large;
     background-color: purple;
     padding: 10px;

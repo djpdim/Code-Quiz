@@ -5,27 +5,28 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">  
     <link rel="stylesheet" type="text/css" href="./assets/css/style.css">
-    <!-- <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.3.1/css/bootstrap.min.css"> -->
-    <!-- add the style sheet here -->
-    <!-- <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/jqueryui/1.12.1/themes/base/jquery-ui.min.css"> -->
     <title>Code Quiz</title>
     </head>
 
-<body class="row"> 
+<body> 
     <a href="./highscores.html" class="col-6">View Highscores</a>
-    <div id="timelapse" ></div>
-    <div id="wrapper" class="row">
-        <div id="questionsDiv" class="row">
+    <div id="timelapse" class="hide"></div>
+    <div id="wrapper">
+        <div id="quiz-screen">
+        <div id="questionsDiv">
             <h1 id="h1" class="mt-5 my-5 p-4 position-relative"> Coding Quiz Challenge</h1></div>
             <p id="par" class="parag">Try to answer the following code-related questions within the time limit. Keep in mind that incorrect
                 answers
                 will penalize your score/time by ten seconds!</p>
             <div id="qst" class="questions h5">Questions</div>
             
-            <ul id="choices" class="choices"></ul></div>
-            <button id="startbtn" >Start Quiz</button> <button id="tryagainbtn">Try Again</button>
-            <div id="feedback"></div>
+            <ul id="choices" class="choices"></ul>
+            <button id="startbtn" >Start Quiz</button>   
+        </div>
     </div>
+    <div id="feedback"></div>
+    </div>
+    <button id="tryagainbtn" class="hide">Try Again</button>
     <div id="quizend">
         Your Score is <span id="scorespan"></span>
         Please enter your initial <input id="initialinput" class="ininput"></input>

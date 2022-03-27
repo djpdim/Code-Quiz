@@ -39,9 +39,16 @@ var submitbtn=document.getElementById("submitbtn")
 var tryagainbtn = document.getElementById("tryagainbtn")
 
 function startQuiz() {
+
+    // Hide the default start menu
+    startbtn.setAttribute("style", "display: none;");
+    qst.setAttribute("style", "display: block");
+    choices.setAttribute("style", "display: block");
+    h1.setAttribute("style", "display: none;");
+    par.setAttribute("style", "display: none;");
+    timelapse.removeAttribute("class");
     time=setInterval(timer, 1000);
     timerEl.textContent=currentTime;
-   
 }
 
 function timer() {
@@ -50,8 +57,9 @@ timerEl.textContent=currentTime;
  
 if (currentTime===0){
     timerEl.textContent="Time's up!"
-    clearInterval(time)
-    document.getElementById("tryagainbtn").style.display = "block";
+    clearInterval(time);
+    tryagainbtn.removeAttribute("class");
+    quizScreen.setAttribute("class", "hide");
 }
 }
 
@@ -76,7 +84,7 @@ function getQuestion(){
 
 function questionCheck(){
     if (this.value !==questionslist[currentQuestionIndex].answer) {
-        currentTime -= 8;
+        currentTime -= 10;
 
         timerEl.textContent=currentTime;
 
@@ -92,23 +100,6 @@ function questionCheck(){
     } else {
         getQuestion()
     };
-}
-
-function startQuiz() {
-
-    // Hide the default start menu
-    startbtn.setAttribute("style", "display: none;");
-    qst.setAttribute("style", "display: block");
-    choices.setAttribute("style", "display: block");
-    document.getElementById("timelapse").style.display = "block";
-    h1.setAttribute("style", "display: none;");
-    par.setAttribute("style", "display: none;");
-    // viewHighScoresLink.setAttribute("style", "display: none;");
-
-    // document.getElementById("h1").style.display = "none";
-    // document.getElementById("startbtn").style.direction = "none";
-    // document.getElementById("par").style.direction = "none";
-    // document.getElementById("choicses").style.display = "block";
 }
 
 function quizend(){
@@ -141,7 +132,7 @@ function refreshPage() {
     refreshPage = location.reload();
 }
 
-startbtn.onclick=startQuiz;
+startbtn.onclick = startQuiz;
 tryagainbtn.onclick = refreshPage
 getQuestion();
 // click listener on submitbtn element to call submitScore function
