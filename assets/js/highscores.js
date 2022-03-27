@@ -3,7 +3,7 @@ var clear = document.querySelector("#clear");
 var goBack = document.querySelector("#goBack");
 
 
-clear.addEventListener("click", function () {
+clear.addEventListener("click", function() {
     localStorage.clear();
     location.reload();
 });
@@ -22,6 +22,6 @@ if (allScores !== null) {
     }
 }
 
-goBack.addEventListener("click", function () {
+goBack.addEventListener("click", function() {
     window.location.replace("./index.html");
 });

@@ -19,7 +19,6 @@
     display: none;
     border: 1px solid black;
     width: 25%;
-    
 }
 
 .hide {
@@ -27,19 +26,19 @@
 }
 
 #timelapse {
-    left:50px;
-    float:right;
+    left: 50px;
+    float: right;
 }
 
 .parag {
-    margin-left:10px
+    margin-left: 10px
 }
 
 .questions {
     text-align: center;
     padding: 0px;
-    left:0px;
-    margin:15px;
+    left: 0px;
+    margin: 15px;
     position: relative;
 }
 
@@ -51,9 +50,8 @@
 }
 
 #h1 {
-    left:350px;
+    left: 350px;
 }
-
 
 #startbtn {
     left: 180px;
@@ -77,18 +75,13 @@
     left: 544px;
 }
 
-/* #quizend {
-    position: relative;
-    display: block;
-    top: 300px;
-    left: 300px;
-} */
-
 .ininput {
     width: 5%;
 }
 
+
 /* new css */
+
 #startTime {
     background-color: purple;
     margin-left: 33%;
@@ -96,6 +89,7 @@
     font-size: 20px;
     color: white;
 }
+
 #questionsDiv {
     margin: 20px;
 }
@@ -153,6 +147,7 @@ textarea {
 label {
     margin-right: 10px;
 }
+
 input {
     margin-bottom: 20px;
     width: 50%;
@@ -168,50 +163,49 @@ h1 {
     border-top: 1px solid lightgray;
 }
 
+
 /* Start media queries */
+
+
 /* A Media Query max-width: 786px */
+
 @media screen and (max-width: 786px) {
-/* Resized content to fit 786px  */
-body {
-    max-width: 786px;
-}
-/* Resized main-content to fit 786px  */
-#wrapper {
-position: absolute;
-left: 20%;
+    /* Resized content to fit 786px  */
+    body {
+        max-width: 786px;
+    }
+    /* Resized main-content to fit 786px  */
+    #wrapper {
+        position: absolute;
+        left: 20%;
+    }
+    a {
+        margin-left: 20%;
+    }
+    #goBack {
+        position: relative;
+        left: 55%;
+    }
+    #clear {
+        position: relative;
+        right: 5%;
+    }
 }
 
-a {
-margin-left: 20%;
-}
-#goBack {
-    
-    position: relative;
-    left: 55%;
-}
-
-#clear {
-    
-    position: relative;
-    right: 5%;
-    
-}
-}
 
 /* A Media Query max-width: 640px */
+
 @media screen and (max-width: 640px) {
-/* Resized content to fit 640px  */
-body {
-    min-width: 640px;
-}
-/* Resized main-content to fit 640px  */
-#wrapper {
-position: absolute;
-left: 10%;
-}
-a {
-  margin-left: 10%;
-}
-
-
+    /* Resized content to fit 640px  */
+    body {
+        min-width: 640px;
+    }
+    /* Resized main-content to fit 640px  */
+    #wrapper {
+        position: absolute;
+        left: 10%;
+    }
+    a {
+        margin-left: 10%;
+    }
 }

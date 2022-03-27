@@ -1,5 +1,4 @@
-var questionslist=[
-    {
+var questionslist = [{
         question: "Commonly used data types DO NOT include:",
         choices: ["strings", "booleans", "alerts", "numbers"],
         answer: "alerts"
@@ -24,18 +23,18 @@ var questionslist=[
         choices: ["Javascript", "terminal / bash", "for loops", "console log"],
         answer: "console log"
     }
- ]
+]
 
-var timerEl=document.getElementById("timelapse");
-var currentTime= questionslist.length * 15;
+var timerEl = document.getElementById("timelapse");
+var currentTime = questionslist.length * 15;
 var time;
-var startbtn=document.getElementById("startbtn");
-var questionsDiv=document.getElementById("questionsDiv");
-var currentQuestionIndex=0;
-var choices=document.getElementById("choices");
-var feedback=document.getElementById("feedback");
+var startbtn = document.getElementById("startbtn");
+var questionsDiv = document.getElementById("questionsDiv");
+var currentQuestionIndex = 0;
+var choices = document.getElementById("choices");
+var feedback = document.getElementById("feedback");
 var holdInterval = 0;
-var submitbtn=document.getElementById("submitbtn")
+var submitbtn = document.getElementById("submitbtn")
 var tryagainbtn = document.getElementById("tryagainbtn")
 
 function startQuiz() {
@@ -47,54 +46,50 @@ function startQuiz() {
     h1.setAttribute("style", "display: none;");
     par.setAttribute("style", "display: none;");
     timelapse.removeAttribute("class");
-    time=setInterval(timer, 1000);
-    timerEl.textContent=currentTime;
+    time = setInterval(timer, 1000);
+    timerEl.textContent = currentTime;
 }
 
 function timer() {
-currentTime--;
-timerEl.textContent=currentTime;
- 
-if (currentTime===0){
-    timerEl.textContent="Time's up!"
-    clearInterval(time);
-    tryagainbtn.removeAttribute("class");
-    quizScreen.setAttribute("class", "hide");
-}
+    currentTime--;
+    timerEl.textContent = currentTime;
+
+    if (currentTime === 0) {
+        timerEl.textContent = "Time's up!"
+        clearInterval(time);
+        tryagainbtn.removeAttribute("class");
+        quizScreen.setAttribute("class", "hide");
+    }
 }
 
-function getQuestion(){
-    currentQuestion=questionslist[currentQuestionIndex];
-    var qst=document.getElementById("qst");
-    qst.textContent=currentQuestion.question;
+function getQuestion() {
+    currentQuestion = questionslist[currentQuestionIndex];
+    var qst = document.getElementById("qst");
+    qst.textContent = currentQuestion.question;
 
-    choices.innerHTML="";
+    choices.innerHTML = "";
 
     currentQuestion.choices.forEach(function(choice, i) {
         var choiceBtn = document.createElement("button");
         choiceBtn.setAttribute("value", choice);
-        choiceBtn.textContent=i + ". " + choice;
+        choiceBtn.textContent = i + ". " + choice;
         choices.appendChild(choiceBtn);
-        choiceBtn.onclick=questionCheck;
-        
+        choiceBtn.onclick = questionCheck;
     });
-
-    
 }
 
-function questionCheck(){
-    if (this.value !==questionslist[currentQuestionIndex].answer) {
+function questionCheck() {
+    if (this.value !== questionslist[currentQuestionIndex].answer) {
         currentTime -= 10;
 
-        timerEl.textContent=currentTime;
+        timerEl.textContent = currentTime;
 
-        feedback.textContent="Wrong";
-    }
-    else {
-        feedback.textContent="Correct";
+        feedback.textContent = "Wrong";
+    } else {
+        feedback.textContent = "Correct";
     }
     currentQuestionIndex++;
-    if (currentQuestionIndex===questionslist.length){
+    if (currentQuestionIndex === questionslist.length) {
         clearInterval(time)
         quizend();
     } else {
@@ -102,8 +97,8 @@ function questionCheck(){
     };
 }
 
-function quizend(){
-    
+function quizend() {
+
     document.getElementById("wrapper").style.display = "none";
     document.getElementById("quizend").style.display = "block";
     document.getElementById("scorespan").textContent = userScore;
@@ -114,15 +109,15 @@ function quizend(){
 function submitScore() {
     // submit the score to the local storage
     // get user initial
-    var userinitial=document.getElementById("initialinput").value
-    // get user highscore
+    var userinitial = document.getElementById("initialinput").value
+        // get user highscore
     var gameObj = {
         initials: userinitial,
         score: currentTime
     }
     var previousScores = JSON.parse(localStorage.getItem('allScores')) || []
     previousScores.push(gameObj)
-    // store in local storage
+        // store in local storage
     localStorage.setItem('allScores', JSON.stringify(previousScores))
     window.location.href = "./highscores.html"
 }
@@ -136,4 +131,4 @@ startbtn.onclick = startQuiz;
 tryagainbtn.onclick = refreshPage
 getQuestion();
 // click listener on submitbtn element to call submitScore function
-    submitbtn.onclick=submitScore
+submitbtn.onclick = submitScore
