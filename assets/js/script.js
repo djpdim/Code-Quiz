@@ -1,3 +1,4 @@
+// Questions List with Choices and Answers
 var questionslist = [{
         question: "Commonly used data types DO NOT include:",
         choices: ["strings", "booleans", "alerts", "numbers"],
@@ -37,19 +38,25 @@ var holdInterval = 0;
 var submitbtn = document.getElementById("submitbtn")
 var tryagainbtn = document.getElementById("tryagainbtn")
 
+// Start Quiz function
 function startQuiz() {
 
     // Hide the default start menu
     startbtn.setAttribute("style", "display: none;");
-    qst.setAttribute("style", "display: block");
-    choices.setAttribute("style", "display: block");
     h1.setAttribute("style", "display: none;");
     par.setAttribute("style", "display: none;");
+
+    // Display the Questions and choices
+    qst.setAttribute("style", "display: block");
+    choices.setAttribute("style", "display: block");
+
+    // Display the timer
     timelapse.removeAttribute("class");
     time = setInterval(timer, 1000);
     timerEl.textContent = currentTime;
 }
 
+// Start Timer function
 function timer() {
     currentTime--;
     timerEl.textContent = currentTime;
@@ -62,6 +69,7 @@ function timer() {
     }
 }
 
+// display the questions with the choices
 function getQuestion() {
     currentQuestion = questionslist[currentQuestionIndex];
     var qst = document.getElementById("qst");
@@ -78,15 +86,16 @@ function getQuestion() {
     });
 }
 
+// Question checker
 function questionCheck() {
     if (this.value !== questionslist[currentQuestionIndex].answer) {
         currentTime -= 10;
 
         timerEl.textContent = currentTime;
 
-        feedback.textContent = "Wrong";
+        feedback.textContent = "Wrong!";
     } else {
-        feedback.textContent = "Correct";
+        feedback.textContent = "Correct!";
     }
     currentQuestionIndex++;
     if (currentQuestionIndex === questionslist.length) {
@@ -97,6 +106,7 @@ function questionCheck() {
     };
 }
 
+// End Quiz
 function quizend() {
 
     document.getElementById("wrapper").style.display = "none";

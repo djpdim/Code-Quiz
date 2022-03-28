@@ -33,7 +33,7 @@ This project has been deployed to GitHub Pages. To get this project up and runni
     * This will show when the time is up so user will reload the Quiz and start again from the beggining.
 
 ### Psuedo code:  
-* When countdown starts, start quiz
+* When start quiz, start countdown 
 * Start Quiz will be on appended page
 * Append the question: choices
 * When user selects the right answer, textcontent "Correct!"
