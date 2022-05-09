@@ -31,7 +31,7 @@
 }
 
 .parag {
-    margin-left: 10px
+    margin-left: 10px;
 }
 
 .questions {
@@ -41,12 +41,12 @@
     margin: 15px;
     position: relative;
     font-size: x-large;
-    top:20px;
+    top: 20px;
 }
 
-#quizscreen{
+#quizscreen {
     position: relative;
-    top:40px;
+    top: 40px;
 }
 
 .choices {
@@ -54,7 +54,7 @@
     justify-content: space-evenly;
     position: relative;
     max-width: 100%;
-    top:65px;
+    top: 65px;
 }
 
 #h1 {
@@ -179,9 +179,7 @@ h1 {
     border-top: 1px solid lightgray;
 }
 
-
 /* Start media queries */
-
 
 /* A Media Query max-width: 786px */
 
@@ -207,7 +205,6 @@ h1 {
         right: 5%;
     }
 }
-
 
 /* A Media Query max-width: 640px */
 
