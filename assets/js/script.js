@@ -39,6 +39,7 @@ var feedback = document.getElementById("feedback")
 var holdInterval = 0
 var submitbtn = document.getElementById("submitbtn")
 var tryagainbtn = document.getElementById("tryagainbtn")
+var highsc = document.getElementById("highsc")
 
 // Start Quiz function
 function startQuiz() {
@@ -52,6 +53,7 @@ function startQuiz() {
     choices.setAttribute("style", "display: flex")
 
     // Display the timer
+    timedisp.removeAttribute("class")
     timelapse.removeAttribute("class")
     time = setInterval(timer, 1000)
     timerEl.textContent = currentTime
@@ -65,6 +67,7 @@ function timer() {
     if (currentTime === 0) {
         timerEl.textContent = "Time's up!"
         clearInterval(time)
+        timedisp.setAttribute("class", "hide")
         tryagainbtn.removeAttribute("class")
         quizScreen.setAttribute("class", "hide")
     }
@@ -113,6 +116,7 @@ function quizend() {
     document.getElementById("quizend").style.display = "block"
     document.getElementById("scorespan").textContent = userScore
     document.getElementById("feedback").style.display = "none"
+    // document.getElementById("highsc").style.display = "block"
 }
 
 function submitScore() {

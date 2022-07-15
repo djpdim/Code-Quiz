@@ -19,7 +19,6 @@
 
 #choices {
     display: none;
-
     justify-content: space-around;
 }
 
@@ -36,10 +35,17 @@
 }
 
 #timelapse {
+    top: 74px;
     left: -693px;
     float: right;
     position: relative;
 }
+
+/* #highsc {
+    position: relative;
+    top: 170px;
+    left: 690px;
+} */
 
 .parag {
     margin-left: 10px;
@@ -72,8 +78,14 @@
     left: 350px;
 }
 
+#timedisp {
+    position: relative;
+    left: 945px;
+    top: 92px;
+}
+
 #startbtn {
-    left: 180px;
+    left: 200px;
     position: relative;
     top: 0px;
     font-size: xx-large;
@@ -157,7 +169,7 @@ li {
 }
 
 button {
-    border-radius: 8px;
+    border-radius: 100px;
 }
 
 textarea {
