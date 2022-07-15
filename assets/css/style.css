@@ -9,16 +9,22 @@
 
 #qst {
     display: none;
+
+    text-decoration: underline;
 }
 
 #choices {
     display: none;
+
+    justify-content: space-around;
 }
 
 #quizend {
     display: none;
-    border: 1px solid black;
-    width: 25%;
+    border: 1px black;
+    width: 15%;
+    position: relative;
+    left: 684px;
 }
 
 .hide {
@@ -80,7 +86,7 @@
     top: 390px;
     display: flex;
     position: relative;
-    left: 544px;
+    left: 770px;
 }
 
 .ininput {
@@ -150,6 +156,20 @@ button {
 textarea {
     width: 90%;
     margin: 20px;
+}
+
+#submitbtn {
+    position: relative;
+    right: -25px;
+    background-color: purple;
+    padding: 10px;
+    font-size: 20px;
+    color: white;
+    top: 4px;
+    left: 30%;
+    width: auto;
+    text-align: center;
+    text-decoration: none;
 }
 
 #Submit {

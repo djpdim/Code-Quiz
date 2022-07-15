@@ -49,7 +49,7 @@ function startQuiz() {
 
     // Display the Questions and choices
     qst.setAttribute("style", "display: block")
-    choices.setAttribute("style", "display: block")
+    choices.setAttribute("style", "display: flex")
 
     // Display the timer
     timelapse.removeAttribute("class")
