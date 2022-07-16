@@ -114,8 +114,10 @@ function questionCheck() {
 function quizend() {
     document.getElementById("wrapper").style.display = "none"
     document.getElementById("quizend").style.display = "block"
-    document.getElementById("scorespan").textContent = userScore
+    document.getElementById("scorespan").textContent = currentTime
     document.getElementById("feedback").style.display = "none"
+    document.getElementById("timedisp").style.display = "none"
+    document.getElementById("timelapse").style.display = "none"
     // document.getElementById("highsc").style.display = "block"
 }
 
