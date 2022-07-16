@@ -41,6 +41,11 @@
     position: relative;
 }
 
+#scorespan {
+    color: red;
+    font-weight: bold;
+}
+
 /* #highsc {
     position: relative;
     top: 170px;
