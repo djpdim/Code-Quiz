@@ -62,7 +62,8 @@ This project has been deployed to GitHub Pages. To get this project up and runni
 
 -   Work along with Tutor Michelle and TA Andrew to bring everything in order to work.
 
-![](./assets/images/StartQuiz.png)
-![](./assets/images/Questions.png)
-![](./assets/images/Tryagain.png)
-![](./assets/images/Highscores.png)
+<img src="./assets/images/StartQuiz1.png" height="400" width="800">
+<img src="./assets/images/Questions1.png" height="400" width="800">
+<img src="./assets/images/Tryagain1.png" height="400" width="800">
+<img src="./assets/images/Endofquiz.png" height="400" width="800">
+<img src="./assets/images/Highscores1.png" height="400" width="800">
